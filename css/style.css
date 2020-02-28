@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cinzel', serif;
+  background: #000;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#crnaTraka {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#logo {
+  margin: 15px;
+  text-transform: uppercase;
+}
+
+#logo a:hover {
+  color: #34dbeb;
+}
+
+#social {
+  margin: 15px;
+}
+
+#social ul {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#social a:hover {
+  color: #34dbeb;
+}
+
+header {
+  width: 100%;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  height: 600px;
+}
+
+nav ul {
+  width: 400px;
+  margin-left: 60%;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+nav ul a:hover {
+  border-bottom: 2px solid #34dbeb;
+  font-size: 20px;
+}
+
+#sivaTraka {
+  background: #000;
+  opacity: 0.8;
+  height: 150px;
+  margin-top: 20%;
+}
+
+h1 {
+  text-transform: uppercase;
+  padding: 3.5% 29%;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #34dbeb;
+}
+
+h2 {
+  font-size: 35px;
+  margin: 0 auto;
+  border-bottom: 5px solid #34dbeb;
+  width: 100px;
+}
+
+#okvirAboutme {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#okvirAboutme h2 {
+  width: 180px;
+  margin: 100px auto;
+  margin-bottom: 50px;
+  border-bottom: 5px solid #34dbeb;
+}
+
+#c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#c p {
+  width: 400px;
+  margin-top: 60px;
+  font-size: 17px;
+}
+
+#okvirSkills {
+  width: 100%;
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 870px;
+}
+
+#okvirSkills h2 {
+  padding-top: 70px;
+  margin-bottom: 50px;
+}
+
+.skillsBlok1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#skills i {
+  font-size: 70px;
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.skillsBlok {
+  width: 280px;
+  margin: 20px 0px;
+  border: 10px solid #34dbeb;
+  padding: 15px;
+}
+
+.skillsBlok p {
+  font-size: 15px;
+}
+
+.skillsBlok h3 {
+  color: #4874eb;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#projects {
+  margin: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#okvirProjects {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#okvirProjects h2 {
+  width: 155px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-top: 70px;
+}
+
+#okvirProjects p {
+  font-size: 20px;
+  margin-left: 22%;
+}
+
+.project a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.7;
+  display: block;
+}
+
+#okvirContact {
+  width: 100%;
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 550px;
+  padding-top: 70px;
+}
+
+#okvirContact h2 {
+  width: 160px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.imePrezime {
+  width: 200px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  border: 2px solid #34dbeb;
+  padding-left: 5px;
+}
+
+.ES {
+  width: 425px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  border: 2px solid #34dbeb;
+  padding-left: 5px;
+}
+
+#message {
+  width: 425px;
+  background: #000000;
+  color: #fff;
+  border: 2px solid #34dbeb;
+  padding-left: 5px;
+}
+
+td {
+  padding: 7px;
+}
+
+#forma {
+  margin: 0 auto;
+  width: 430px;
+}
+
+#button {
+  width: 100px;
+  height: 50px;
+  margin-left: 162px;
+  background: #34dbeb;
+  color: #2b2929;
+  margin-top: 15px;
+}
+
+#buttonhover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+footer {
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 13px;
+}
+
+#files ul {
+  width: 150px;
+  border-right: 1px solid #fff;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#files ul li a:hover {
+  color: #34dbeb;
+}
+
+#copy span {
+  margin-left: 10px;
+}
+
+#footer1 {
+  width: 405px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*RESPONSIVE */
+@media screen and (max-width: 1024px) {
+  h1 {
+    padding: 3.5% 22%;
+  }
+  #okvirProjects p {
+    margin-left: 12%;
+  }
+  #projects img {
+    width: 250px;
+    height: 150px;
+  }
+  nav ul {
+    margin-left: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    padding: 3.5% 12%;
+  }
+  #sivaTraka {
+    height: 130px;
+    margin-top: 30%;
+  }
+  #okvirProjects p {
+    margin-left: 12%;
+  }
+  #projects {
+    display: block;
+    margin-left: 25%;
+  }
+  #projects img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  nav ul {
+    margin-left: 40%;
+  }
+  .skillsBlok1 {
+    display: block;
+  }
+  #skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #okvirSkills {
+    height: 1100px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #logo {
+    font-size: 10px;
+  }
+  #social {
+    font-size: 10px;
+  }
+  #social ul {
+    width: 70px;
+  }
+  nav ul {
+    font-size: 13px;
+    margin-left: 0px;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav ul a:hover {
+    font-size: 15px;
+  }
+  header {
+    height: 500px;
+  }
+  #sivaTraka {
+    height: 150px;
+    margin-top: 50%;
+  }
+  h1 {
+    font-size: 25px;
+    padding: 35px 5px;
+  }
+  #web {
+    margin-left: 35%;
+  }
+  #okvirAboutme h2 {
+    width: 120px;
+    margin: 50px auto;
+    border-bottom: 3px solid #34dbeb;
+    font-size: 20px;
+  }
+  #okvirAboutme p {
+    width: 200px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  #c {
+    display: block;
+  }
+  .skillsBlok {
+    width: 250px;
+    border: 5px solid #34dbeb;
+    padding: px;
+  }
+  .skillsBlok p {
+    font-size: 15px;
+  }
+  .skillsBlok h3 {
+    color: #4874eb;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #skills {
+    display: block;
+    margin-left: 6px;
+  }
+  #okvirSkills {
+    height: 2050px;
+  }
+  #okvirSkills h2 {
+    font-size: 25px;
+    margin: 0 auto;
+    border-bottom: 3px solid #34dbeb;
+    width: 70px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+  }
+  #okvirProjects {
+    margin: 0 10px;
+  }
+  #okvirProjects h2 {
+    width: 100px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    font-size: 20px;
+    border-bottom: 3px solid #34dbeb;
+  }
+  #okvirProjects p {
+    font-size: 16px;
+    margin-left: px;
+  }
+  #projects {
+    margin-left: 50px;
+  }
+  #projects img {
+    width: 200px;
+    height: 150px;
+  }
+  #okvirContact {
+    height: 400px;
+  }
+  #okvirContact h2 {
+    width: 120px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    border-bottom: 3px solid #34dbeb;
+  }
+  .imePrezime {
+    width: 100px;
+    height: 25px;
+  }
+  .ES {
+    width: 225px;
+    height: 25px;
+  }
+  #message {
+    width: 225px;
+  }
+  #forma {
+    width: 230px;
+  }
+  #button {
+    width: 50px;
+    height: 25px;
+    margin-left: 102px;
+  }
+  td {
+    padding: 3px 7px;
+  }
+  #footer1 {
+    display: block;
+    font-size: 10px;
+  }
+  #copy span {
+    margin-left: 60px;
+  }
+  #files ul {
+    width: 70px;
+    border-right: 0px;
+    margin-left: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
