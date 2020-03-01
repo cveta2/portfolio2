@@ -1,13 +1,12 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
 $black: #000;
 $white: #fff;
 $blue: #34dbeb;
 $darkBlue:#4874eb;
 $grey:rgb(43, 41, 41);
-
 body {
     font-family: 'Cinzel', serif;
     background: $black;
@@ -63,10 +62,12 @@ header {
     @include postavitiFullSirinu;
     @include stilPozadine("../img/background.jpg");
     color:$white;
-    height: 600px;
+    min-height: 600px;
+    max-height: 610px;
 }
 nav ul {
     width: 400px;
+    min-height: 50px;
     margin-left: 60%;
     padding-top: 20px;
     display: flex;
@@ -84,16 +85,20 @@ nav ul {
 #sivaTraka {
     background: $black;
     opacity: 0.8;
-    height: 150px;
-    margin-top: 20%;
+    min-height: 150px;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    
 }
 h1 {
     text-transform: uppercase;
-    padding: 3.5% 29%;
     font-size: 40px;
     text-shadow: 2px 2px 2px $blue;
+    width: 100%;
+    display: block;
+    text-align: center;
 }
-
 h2 {
     font-size: 35px;
     margin: 0 auto;
@@ -125,7 +130,6 @@ h2 {
 #okvirSkills {
     @include postavitiFullSirinu;
     @include stilPozadine("../img/background2.jpg");
-    height: 870px;
 
     h2 {
         padding-top: 70px;
@@ -178,7 +182,9 @@ h2 {
 
     p {
         font-size: 20px;
-        margin-left: 22%;
+        width: 100%;
+        text-align: center;
+        display: block;
     }
 }
 .project a:hover{
@@ -186,6 +192,7 @@ h2 {
     opacity: 0.7;
     display: block;
 }
+
 #okvirContact {
     @include postavitiFullSirinu;
     @include stilPozadine("../img/background2.jpg");
@@ -269,47 +276,18 @@ footer {
     display: flex;
 }
 
-/*RESPONSIVE */
+/* RESPONSIVE */
 
-@media screen and (max-width: 1024px){
-    h1 {
-        padding: 3.5% 22%;
-    }
-    #okvirProjects p {
-        margin-left: 12%;
-    }
-    #projects img {
-        width: 250px;
-        height: 150px;
-    }
+@media screen and (max-width: 1100px) {
     nav ul {
         margin-left: 50%;
     }
+    .project img{
+        width: 250px;
+        height: 150px;
+    }
 }
-
-@media screen and (max-width: 768px){
-    h1 {
-        padding: 3.5% 12%;
-    }
-    #sivaTraka {
-        height: 130px;
-        margin-top: 30%;
-    }
-    #okvirProjects p {
-        margin-left: 12%;
-    }
-    #projects{
-        display: block;
-        margin-left: 25%;
-         img {
-             width: 300px;
-             height: 200px;
-             margin-bottom: 20px;
-        }
-    }
-    nav ul {
-        margin-left: 40%;
-    }
+@media screen and (max-width: 1050px) {
     .skillsBlok1 {
         display: block;
     }
@@ -317,116 +295,117 @@ footer {
         display: flex;
         justify-content: space-around;
     }
-    #okvirSkills {
-        height: 1100px;
+   
+    #sivaTraka {
+        margin-top: 18%;
     }
 }
+@media screen and (max-width: 970px) {
+    #projects {
+        flex-direction: column;
+        margin: 80px auto;
+        width: 80%;
+        text-align: center;
+    }
+    .project img {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 860px){
+    nav ul {
+        margin-left: 40%;
+    }
+}
+@media screen and (max-width: 768px){
+    #skills {
+       flex-direction: column;
+       width: 80%;
+        margin: 0 auto;
+    }
+    #sivaTraka {
+        margin-top: 30%
+    }
+    .skillsBlok {
+        width: 90%;
+        
+    }
 
-@media screen and (max-width: 320px) {
-    #logo {
-        font-size: 10px;
+}
+@media screen and (max-width: 730px){
+    nav ul {
+        margin-left: 30%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 25px;
+        border-bottom: 3px solid $blue;
+    }
+    #okvirAboutme h2 {
+        width: 130px;
+        border-bottom: 3px solid $blue;
+    }
+    #okvirSkills h2 {
+        width: 75px;
+    }
+    #okvirProjects h2 {
+        width: 110px;
+    }
+    #okvirContact h2 {
+        width: 120px;
+    }
+    #c {
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+       p {
+           width: 100%;
+           margin-bottom: 15px;
+       }
+    }
+}
+@media screen and (max-width: 625px) {
+    nav ul {
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 560px) {
+    nav ul {
+        margin-left: 10%;
+        li a{
+            font-size: 12px;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    nav ul {
+        margin-left: 0;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        text-align: right;
+        a:hover {
+            font-size: 15px;
+        }
+        li {
+            margin: 3px 0;
+        }
+    }
+    h1 {
+        font-size: 25px;
     }
     #social {
-        font-size: 10px;
+        font-size: 12px;
 
         ul {
             width: 70px;
         }
     }
-    nav ul {
-        font-size: 13px;
-        margin-left: 0px;
-        width: 100%;
-        justify-content: space-around;
-
-        a:hover {
-            font-size: 15px;
-        }
+    #logo {
+        font-size: 15px;
     }
-    header {
-        height: 500px;
-    }
-    #sivaTraka {
-        height: 150px;
-        margin-top: 50%;
-    }
-    h1 {
-        font-size: 25px;
-        padding: 35px 5px;
-    }
-    #web {
-        margin-left: 35%;
-    }
-    #okvirAboutme {
-        h2{
-            width: 120px;
-            margin: 50px auto;
-            border-bottom: 3px solid $blue;
-            font-size: 20px;
-        }
-        p {
-            width: 200px;
-            margin-bottom: 20px;
-            font-size: 15px;
-        }
-    }
-    #c {
-        display: block;
-    }
-    .skillsBlok {
-        width: 250px;
-        border: 5px solid $blue;
-        padding: px;
-    
-        p {
-            font-size: 15px;
-        }
-    
-        h3 {
-            color: $darkBlue;
-            margin-bottom: 10px;
-            font-size: 20px;
-        }
-    }
-    #skills {
-        display: block;
-        margin-left: 6px;
-    }
-    #okvirSkills {
-        height: 2050px;
-        h2 {
-            font-size: 25px;
-            margin: 0 auto;
-            border-bottom: 3px solid $blue;
-            width: 70px;
-            margin-bottom: 50px;
-            padding-top: 50px;
-        }
-    }
-    #okvirProjects {
-        margin: 0 10px;
-        h2 {
-            width: 100px;
-            margin-top:0px;
-            margin-bottom: 50px;
-            padding-top: 50px;
-            font-size: 20px;
-            border-bottom: 3px solid $blue;
-        }
-    
-        p {
-            font-size: 16px;
-            margin-left: px;
-        }
-    }
-    #projects {
-        margin-left: 50px;
-        img {
-            width: 200px;
-            height: 150px;
-        }
-    }
-
     #okvirContact {
         height: 400px;
         h2 {
@@ -459,19 +438,40 @@ footer {
     td {
         padding: 3px 7px;
     }
+    .project img {
+        height: 100px;
+    }
+    #footer1 {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 10px;
+        text-align: center;
+    }
     #footer1 {
         display: block;
         font-size: 10px;
     }
-    #copy span {
-        margin-left: 60px;
-    }
+ 
     #files ul {
         width: 70px;
         border-right: 0px ;
-        margin-left: 110px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-around;
         margin-bottom: 10px;
     }
-}   
+    #skills {
+        margin-left: 35px;
+    }
+}
+@media screen and (max-width: 400px){
+    #skills {
+        margin-left: 23px;
+    }
+ }
+@media screen and (max-width: 320px){
+   #skills {
+       margin-left: 15px;
+   }
+}
