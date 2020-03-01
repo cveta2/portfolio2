@@ -1,477 +1,551 @@
 * {
-    margin: 0;
-    padding: 0px;
+  margin: 0;
+  padding: 0px;
 }
-$black: #000;
-$white: #fff;
-$blue: #34dbeb;
-$darkBlue:#4874eb;
-$grey:rgb(43, 41, 41);
+
 body {
-    font-family: 'Cinzel', serif;
-    background: $black;
-    color: $white;
+  font-family: 'Cinzel', serif;
+  background: #000;
+  color: #fff;
 }
+
 a {
-    color: $white;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
+
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 #crnaTraka {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-#logo {
-    margin: 15px;
-    text-transform: uppercase;
 
-    a:hover {
-        color:$blue;
-    }
+#logo {
+  margin: 15px;
+  text-transform: uppercase;
+}
+
+#logo a:hover {
+  color: #34dbeb;
 }
 
 #social {
-    margin: 15px;
-    ul {
-        width: 150px;
-        display: flex;
-        justify-content: space-around;
-    }
+  margin: 15px;
+}
 
-    a:hover {
-        color: $blue;
-    }    
+#social ul {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-@mixin postavitiFullSirinu {
-    width: 100%;
+
+#social a:hover {
+  color: #34dbeb;
 }
-@mixin stilPozadine($putanja) {
-    background: {
-        image: url($putanja);
-        size: cover;
-        repeat: no-repeat;
-        position: center;
-        attachment: fixed;
-    }
-}
+
 header {
-    @include postavitiFullSirinu;
-    @include stilPozadine("../img/background.jpg");
-    color:$white;
-    min-height: 600px;
-    max-height: 610px;
+  width: 100%;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 600px;
+  max-height: 610px;
 }
+
 nav ul {
-    width: 400px;
-    min-height: 50px;
-    margin-left: 60%;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-
-    li {
-        text-transform: uppercase;
-    }
-
-    a:hover {
-        border-bottom: 2px solid $blue;
-        font-size: 20px ;
-    }
+  width: 400px;
+  min-height: 50px;
+  margin-left: 60%;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+nav ul a:hover {
+  border-bottom: 2px solid #34dbeb;
+  font-size: 20px;
+}
+
 #sivaTraka {
-    background: $black;
-    opacity: 0.8;
-    min-height: 150px;
-    margin-top: 15%;
-    display: flex;
-    align-items: center;
-    
+  background: #000;
+  opacity: 0.8;
+  min-height: 150px;
+  margin-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 h1 {
-    text-transform: uppercase;
-    font-size: 40px;
-    text-shadow: 2px 2px 2px $blue;
-    width: 100%;
-    display: block;
-    text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #34dbeb;
+  width: 100%;
+  display: block;
+  text-align: center;
 }
+
 h2 {
-    font-size: 35px;
-    margin: 0 auto;
-    border-bottom: 5px solid $blue;
-    width: 100px;
+  font-size: 35px;
+  margin: 0 auto;
+  border-bottom: 5px solid #34dbeb;
+  width: 100px;
 }
+
 #okvirAboutme {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 40px;
-
-    h2 {
-        width: 180px;
-        margin: 100px auto;
-        margin-bottom: 50px;
-        border-bottom: 5px solid $blue;
-    }
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
 }
+
+#okvirAboutme h2 {
+  width: 180px;
+  margin: 100px auto;
+  margin-bottom: 50px;
+  border-bottom: 5px solid #34dbeb;
+}
+
 #c {
-    display: flex;
-    justify-content: space-around;
-    p {
-        width: 400px;
-        margin-top: 60px;
-        font-size: 17px;
-    }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
+#c p {
+  width: 400px;
+  margin-top: 60px;
+  font-size: 17px;
+}
+
 #okvirSkills {
-    @include postavitiFullSirinu;
-    @include stilPozadine("../img/background2.jpg");
-
-    h2 {
-        padding-top: 70px;
-        margin-bottom: 50px;
-    }
+  width: 100%;
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
+
+#okvirSkills h2 {
+  padding-top: 70px;
+  margin-bottom: 50px;
+}
+
 .skillsBlok1 {
-    display: flex;
-    justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-#skills {
-    i{
-        font-size: 70px;
-        float: left;
-        padding-right: 20px;
-        padding-bottom: 10px;    
-    }
+
+#skills i {
+  font-size: 70px;
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 10px;
 }
+
 .skillsBlok {
-    width: 280px;
-    margin: 20px 0px;
-    border: 10px solid $blue;
-    padding: 15px;
-
-    p {
-        font-size: 15px;
-    }
-
-    h3 {
-        color: $darkBlue;
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
+  width: 280px;
+  margin: 20px 0px;
+  border: 10px solid #34dbeb;
+  padding: 15px;
 }
+
+.skillsBlok p {
+  font-size: 15px;
+}
+
+.skillsBlok h3 {
+  color: #4874eb;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
 #projects {
-    margin: 80px 0;
-    display: flex;
-    justify-content: space-around;
+  margin: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-#okvirProjects{
-    width: 80%;
-    margin: 0 auto;
 
-    h2 {
-        width: 155px;
-        margin-top:0px;
-        margin-bottom: 50px;
-        padding-top: 70px;
-    }
-
-    p {
-        font-size: 20px;
-        width: 100%;
-        text-align: center;
-        display: block;
-    }
+#okvirProjects {
+  width: 80%;
+  margin: 0 auto;
 }
-.project a:hover{
-    transform: scale(1.05);
-    opacity: 0.7;
-    display: block;
+
+#okvirProjects h2 {
+  width: 155px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-top: 70px;
+}
+
+#okvirProjects p {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.project a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.7;
+  display: block;
 }
 
 #okvirContact {
-    @include postavitiFullSirinu;
-    @include stilPozadine("../img/background2.jpg");
-    height: 550px;
-    padding-top: 70px;
-
-    h2 {
-        width: 160px;
-        margin-top: 0px;
-        margin-bottom: 40px;
-    }
+  width: 100%;
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 550px;
+  padding-top: 70px;
 }
+
+#okvirContact h2 {
+  width: 160px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
 .imePrezime {
-    width: 200px;
-    height: 50px;
-    background: $black;
-    color: #fff;
-    border: 2px solid $blue;
-    padding-left: 5px;
+  width: 200px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  border: 2px solid #34dbeb;
+  padding-left: 5px;
 }
+
 .ES {
-    width: 425px;
-    height: 50px;
-    background: $black;
-    color: #fff;
-    border: 2px solid $blue;  
-    padding-left: 5px; 
+  width: 425px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  border: 2px solid #34dbeb;
+  padding-left: 5px;
 }
+
 #message {
-    width: 425px;
-    background: #000000;
-    color: #fff;
-    border: 2px solid $blue;
-    padding-left: 5px;
+  width: 425px;
+  background: #000000;
+  color: #fff;
+  border: 2px solid #34dbeb;
+  padding-left: 5px;
 }
+
 td {
-    padding: 7px;
+  padding: 7px;
 }
+
 #forma {
-    margin: 0 auto;
-    width: 430px;
+  margin: 0 auto;
+  width: 430px;
 }
+
 #button {
-    width: 100px;
-    height: 50px;
-    margin-left:162px;
-    background: $blue;
-    color: $grey;
-    margin-top: 15px;
-
-    &hover {
-        transform: scale(1.05);
-        opacity: 0.7;
-        cursor:pointer;
-    }
+  width: 100px;
+  height: 50px;
+  margin-left: 162px;
+  background: #34dbeb;
+  color: #2b2929;
+  margin-top: 15px;
 }
+
+#buttonhover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 footer {
-    text-transform: uppercase;
-    padding: 15px;
-    font-size: 13px;
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 13px;
 }
-#files ul {
-    width: 150px;
-    border-right: 1px solid $white;
-    margin-right: 10px;
-    display: flex;
-    justify-content: space-around;
 
-    li {
-        a:hover{
-            color: $blue;
-        }
-    }
+#files ul {
+  width: 150px;
+  border-right: 1px solid #fff;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
+#files ul li a:hover {
+  color: #34dbeb;
+}
+
 #copy span {
-    margin-left: 10px;
+  margin-left: 10px;
 }
+
 #footer1 {
-    width: 405px;
-    margin: 0 auto;
-    display: flex;
+  width: 405px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* RESPONSIVE */
-
 @media screen and (max-width: 1100px) {
-    nav ul {
-        margin-left: 50%;
-    }
-    .project img{
-        width: 250px;
-        height: 150px;
-    }
+  nav ul {
+    margin-left: 50%;
+  }
+  .project img {
+    width: 250px;
+    height: 150px;
+  }
 }
+
 @media screen and (max-width: 1050px) {
-    .skillsBlok1 {
-        display: block;
-    }
-    #skills {
-        display: flex;
+  .skillsBlok1 {
+    display: block;
+  }
+  #skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
         justify-content: space-around;
-    }
-   
-    #sivaTraka {
-        margin-top: 18%;
-    }
+  }
+  #sivaTraka {
+    margin-top: 18%;
+  }
 }
+
 @media screen and (max-width: 970px) {
-    #projects {
-        flex-direction: column;
-        margin: 80px auto;
-        width: 80%;
-        text-align: center;
-    }
-    .project img {
-        width: 60%;
-        margin-bottom: 20px;
-    }
+  #projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 80px auto;
+    width: 80%;
+    text-align: center;
+  }
+  .project img {
+    width: 60%;
+    margin-bottom: 20px;
+  }
 }
-@media screen and (max-width: 860px){
-    nav ul {
-        margin-left: 40%;
-    }
-}
-@media screen and (max-width: 768px){
-    #skills {
-       flex-direction: column;
-       width: 80%;
-        margin: 0 auto;
-    }
-    #sivaTraka {
-        margin-top: 30%
-    }
-    .skillsBlok {
-        width: 90%;
-        
-    }
 
+@media screen and (max-width: 860px) {
+  nav ul {
+    margin-left: 40%;
+  }
 }
-@media screen and (max-width: 730px){
-    nav ul {
-        margin-left: 30%;
-    }
-    h1 {
-        font-size: 30px;
-    }
-    h2 {
-        font-size: 25px;
-        border-bottom: 3px solid $blue;
-    }
-    #okvirAboutme h2 {
-        width: 130px;
-        border-bottom: 3px solid $blue;
-    }
-    #okvirSkills h2 {
-        width: 75px;
-    }
-    #okvirProjects h2 {
-        width: 110px;
-    }
-    #okvirContact h2 {
-        width: 120px;
-    }
-    #c {
-        flex-direction: column;
-        width: 80%;
-        margin: 0 auto;
-       p {
-           width: 100%;
-           margin-bottom: 15px;
-       }
-    }
+
+@media screen and (max-width: 768px) {
+  #skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #sivaTraka {
+    margin-top: 30%;
+  }
+  .skillsBlok {
+    width: 90%;
+  }
 }
+
+@media screen and (max-width: 730px) {
+  nav ul {
+    margin-left: 30%;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+    border-bottom: 3px solid #34dbeb;
+  }
+  #okvirAboutme h2 {
+    width: 130px;
+    border-bottom: 3px solid #34dbeb;
+  }
+  #okvirSkills h2 {
+    width: 75px;
+  }
+  #okvirProjects h2 {
+    width: 110px;
+  }
+  #okvirContact h2 {
+    width: 120px;
+  }
+  #c {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+  #c p {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
 @media screen and (max-width: 625px) {
-    nav ul {
-        margin-left: 20%;
-    }
+  nav ul {
+    margin-left: 20%;
+  }
 }
-@media screen and (max-width: 560px) {
-    nav ul {
-        margin-left: 10%;
-        li a{
-            font-size: 12px;
-        }
-    }
-}
-@media screen and (max-width: 500px) {
-    nav ul {
-        margin-left: 0;
-        flex-direction: column;
-        width: 80%;
-        margin: 0 auto;
-        text-align: right;
-        a:hover {
-            font-size: 15px;
-        }
-        li {
-            margin: 3px 0;
-        }
-    }
-    h1 {
-        font-size: 25px;
-    }
-    #social {
-        font-size: 12px;
 
-        ul {
-            width: 70px;
-        }
-    }
-    #logo {
-        font-size: 15px;
-    }
-    #okvirContact {
-        height: 400px;
-        h2 {
-            width: 120px;
-            margin-top: 0px;
-            margin-bottom: 40px;
-            font-size: 25px;
-            border-bottom: 3px solid $blue;
-        }
-    }
-    .imePrezime {
-        width: 100px;
-        height: 25px;
-    }
-    .ES {
-        width: 225px;
-        height: 25px;
-    }
-    #message {
-        width: 225px;
-    }
-    #forma {
-        width: 230px;
-    }
-    #button {
-        width: 50px;
-        height: 25px;
-        margin-left:102px;
-    }
-    td {
-        padding: 3px 7px;
-    }
-    .project img {
-        height: 100px;
-    }
-    #footer1 {
-        display: block;
-        width: 80%;
-        margin: 0 auto;
-        font-size: 10px;
-        text-align: center;
-    }
-    #footer1 {
-        display: block;
-        font-size: 10px;
-    }
- 
-    #files ul {
-        width: 70px;
-        border-right: 0px ;
-        margin: 0 auto;
-        display: flex;
+@media screen and (max-width: 560px) {
+  nav ul {
+    margin-left: 10%;
+  }
+  nav ul li a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav ul {
+    margin-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    text-align: right;
+  }
+  nav ul a:hover {
+    font-size: 15px;
+  }
+  nav ul li {
+    margin: 3px 0;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  #social {
+    font-size: 12px;
+  }
+  #social ul {
+    width: 70px;
+  }
+  #logo {
+    font-size: 15px;
+  }
+  #okvirContact {
+    height: 400px;
+  }
+  #okvirContact h2 {
+    width: 120px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    border-bottom: 3px solid #34dbeb;
+  }
+  .imePrezime {
+    width: 100px;
+    height: 25px;
+  }
+  .ES {
+    width: 225px;
+    height: 25px;
+  }
+  #message {
+    width: 225px;
+  }
+  #forma {
+    width: 230px;
+  }
+  #button {
+    width: 50px;
+    height: 25px;
+    margin-left: 102px;
+  }
+  td {
+    padding: 3px 7px;
+  }
+  .project img {
+    height: 100px;
+  }
+  #footer1 {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 10px;
+    text-align: center;
+  }
+  #footer1 {
+    display: block;
+    font-size: 10px;
+  }
+  #files ul {
+    width: 70px;
+    border-right: 0px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
         justify-content: space-around;
-        margin-bottom: 10px;
-    }
-    #skills {
-        margin-left: 35px;
-    }
+    margin-bottom: 10px;
+  }
+  #skills {
+    margin-left: 35px;
+  }
 }
-@media screen and (max-width: 400px){
-    #skills {
-        margin-left: 23px;
-    }
- }
-@media screen and (max-width: 320px){
-   #skills {
-       margin-left: 15px;
-   }
+
+@media screen and (max-width: 400px) {
+  #skills {
+    margin-left: 23px;
+  }
 }
+
+@media screen and (max-width: 320px) {
+  #skills {
+    margin-left: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
